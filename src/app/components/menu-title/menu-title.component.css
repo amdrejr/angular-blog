@@ -1,0 +1,14 @@
+.container__menu-title {
+  color: #fff;
+}
+
+.container__menu-title h1 {
+  font-size: 150px;
+  text-align: center;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.container__menu-title hr {
+  border: 1px solid #fff;
+}

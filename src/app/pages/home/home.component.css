@@ -1,0 +1,21 @@
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 0;
+}
+
+.articles {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.articles__others {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
