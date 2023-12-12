@@ -3,7 +3,8 @@
 }
 
 .container__menu-title h1 {
-  font-size: 150px;
+  font-size: clamp(50px, 16vw, 175px);
+  text-shadow: 5px 5px 0 rgba(127, 127, 127, .2);
   text-align: center;
   font-weight: 700;
   text-transform: uppercase;

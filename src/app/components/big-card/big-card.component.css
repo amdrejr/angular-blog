@@ -1,26 +1,26 @@
 .container__big-card {
-  width: 400px;
-  height: 500px;
-
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
+  gap: 6px;
+  max-width: 660px;
+}
+
+.big-card__photo {
+  width: 100%;
 }
 
 .big-card__photo > img {
   width: 100%;
-  background-color: red;
 }
 
 
 .big-card__title > h1 {
   font-size: 22px;
   font-weight: 700;
-  margin: 15px 0;
 }
 
-.big-card__description > p > a{
+.big-card__description p {
   color: grey;
-
 }

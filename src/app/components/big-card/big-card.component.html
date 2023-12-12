@@ -1,17 +1,15 @@
 <div class="container__big-card">
   <div class="big-card__photo">
-    <img src="https://www.zup.com.br/wp-content/uploads/2021/03/5e32dc5538c14b0d4b28f87f_imagens-angular3.png" alt="imagem"  >
+    <img [src]="photo" alt="imagem"  >
   </div>
   <div class="big-card__title">
     <h1>
-      <a href="#">Nova versão do Angular já disponível!</a>
+      <a href="#">{{title}}</a>
     </h1>
   </div>
   <div class="big-card__description">
     <p>
-      <a href="#">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio ut ducimus incidunt nam officiis error. Quisquam, quibusdam. Quisquam, quibusdam.
-      </a>
+        {{description}}
     </p>
   </div>
 </div>

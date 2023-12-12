@@ -6,16 +6,25 @@ header {
 }
 
 .articles {
+  padding: 20px;
+  width: 100%;
   display: flex;
-  flex-wrap: wrap;
   align-items: flex-start;
   justify-content: center;
   gap: 20px;
-  margin-top: 20px;
 }
 
 .articles__others {
   display: flex;
   flex-direction: column;
-  gap: 15px;
+  gap: clamp(7px, 2.5vw, 20px);
+  height: 100%;
+}
+
+
+@media screen and (max-width: 992px) {
+  .articles {
+    flex-wrap: wrap;
+    gap: 50px;
+  }
 }
