@@ -1,33 +1,22 @@
-<header>
-
-  <app-menu-bar></app-menu-bar>
-</header>
-
 
 <app-menu-title></app-menu-title>
 <div class="articles">
   <div class="articles__main">
     <app-big-card
-      photo="https://picsum.photos/400/300"
-      title="Lorem ipsum dolor sit amet consectetur adipisicing elit."
-      description="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro, voluptate amet harum a esse necessitatibus! Quisquam, voluptatum. Quisquam, voluptatum."
+      [id]="datas[3].id"
+      [photo]="datas[3].photo"
+      [title]="datas[3].title"
+      [description]="datas[3].description"
     >
     </app-big-card>
   </div>
   <div class="articles__others">
     <app-small-card
-      photo="https://picsum.photos/188"
-      title="Lorem ipsum dolor sit amet consectetur adipisicing elit."
-    ></app-small-card>
-    <hr>
-    <app-small-card
-      photo="https://picsum.photos/200"
-      title="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit, in?"
-    ></app-small-card>
-    <hr>
-    <app-small-card
-      photo="https://picsum.photos/201"
-      title="Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam!"
+      *ngFor="let v of datas.slice(0,3); let i = index"
+      [id]="v.id"
+      [photo]="v.photo"
+      [title]="v.title"
+      [ngClass]="{'add-border': i < 2}"
     ></app-small-card>
   </div>
 </div>
